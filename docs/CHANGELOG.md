@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/progmonster/ssh-deploy/compare/v1.0.0...v1.1.0) (2023-03-20)
+
+
+### Features
+
+* escalate all errors ([d43104c](https://github.com/progmonster/ssh-deploy/commit/d43104cf3154b074836633e3e0ca735f598931ab))
+
 # 1.0.0 (2023-03-20)
 
 
