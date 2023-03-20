@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Create a file
         shell: bash
-        run: echo aaa >> 1.txt
+        run: echo bbb >> 1.txt
 
       - name: Deploy to Production server ${{ vars.PRODUCTION_HOST }}
         uses: progmonster/ssh-deploy@v1.0.0
