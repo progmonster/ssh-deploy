@@ -12,7 +12,7 @@ const handleError = (message, isRequired, callback) => {
 
 // eslint-disable-next-line max-len
 const remoteCmd = async (content, privateKeyPath, isRequired, label) => new Promise((resolve, reject) => {
-  console.log(`Inside remote cmd: isRequired=${isRequired}, label=${label}`);
+  console.log(`Inside remote cmd: isRequired=${isRequired}, label=${label}...`);
   const filename = `local_ssh_script-${label}.sh`;
   try {
     writeToFile({ dir: githubWorkspace, filename, content, isRequired });
