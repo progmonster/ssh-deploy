@@ -13,7 +13,7 @@ jobs:
         run: echo ccc >> 1.txt
 
       - name: Deploy to Production server ${{ vars.PRODUCTION_HOST }}
-        uses: progmonster/ssh-deploy@v1.0.0
+        uses: progmonster/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_DEPLOYMENT_SSH_PRIVATE_KEY }}
           ARGS: "-vi --mkpath"
