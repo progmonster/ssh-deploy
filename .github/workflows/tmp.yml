@@ -24,7 +24,7 @@ jobs:
           SCRIPT_BEFORE: |
             ls -al
           SCRIPT_AFTER: |
-            exit 1
             mv -f apps/1.txt apps/2.txt
+            exit 1
             ls -al
             echo $RSYNC_STDOUT
