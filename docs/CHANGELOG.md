@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/progmonster/ssh-deploy/compare/v1.1.0...v1.1.1) (2023-03-20)
+
+
+### Bug Fixes
+
+* Trigger Manual Release ([afe3e95](https://github.com/progmonster/ssh-deploy/commit/afe3e958708a50dc2407d287abed916c6c94c088))
+
 # [1.1.0](https://github.com/progmonster/ssh-deploy/compare/v1.0.0...v1.1.0) (2023-03-20)
 
 
