@@ -1,6 +1,6 @@
 {
   "name": "@draganfilipovic/ssh-deploy",
-  "version": "4.1.8",
+  "version": "1.0.0",
   "description": "Fast NodeJS action to deploy specific directory from `GITHUB_WORKSPACE` to a server via rsync over ssh.",
   "main": "dist/index.js",
   "files": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easingthemes/ssh-deploy.git"
+    "url": "git+https://github.com/progmonster/ssh-deploy.git"
   },
   "keywords": [
     "deploy",
@@ -26,9 +26,9 @@
   "author": "Dragan Filipovic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/easingthemes/ssh-deploy/issues"
+    "url": "https://github.com/progmonster/ssh-deploy/issues"
   },
-  "homepage": "https://github.com/easingthemes/ssh-deploy#readme",
+  "homepage": "https://github.com/progmonster/ssh-deploy#readme",
   "dependencies": {
     "rsyncwrapper": "^3.0.1"
   },
