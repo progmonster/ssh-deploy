@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+      - name: Ping Remote
+        shell: bash
+        run: ping google.com -c 10
+
       - name: Create a file
         shell: bash
         run: echo ccc >> 1.txt
