@@ -10,21 +10,20 @@ jobs:
     steps:
       - name: Create a file
         shell: bash
-        run: echo ccc >> 1.txt
+        run: echo ccc >> 2.txt
 
       - name: Deploy to Production server ${{ vars.PRODUCTION_HOST }}
         uses: progmonster/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_DEPLOYMENT_SSH_PRIVATE_KEY }}
           ARGS: "-vi --mkpath"
-          SOURCE: 1.txt
+          SOURCE: 2.txt
           REMOTE_HOST: ${{ vars.PRODUCTION_HOST }}
           REMOTE_USER: ${{ vars.PRODUCTION_USER }}
           TARGET: apps/1.txt
           SCRIPT_BEFORE: |
             ls -al
           SCRIPT_AFTER: |
-            mv -f apps/1.txt apps/2.txt
-            exit 1
+            mv -f apps/2.txt apps/3.txt
             ls -al
             echo $RSYNC_STDOUT
